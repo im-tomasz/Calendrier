@@ -1,0 +1,138 @@
+body {
+background: #334B35;
+background: linear-gradient(180deg, rgba(51, 75, 53, 1) 22%, #070707 22%, #070707 30%, rgba(250, 96, 54, 1) 30%, rgba(250, 96, 54, 1) 37%, rgba(253, 229, 191, 1) 37%, rgba(253, 229, 191, 1) 52%, rgba(18, 8, 8, 1) 52%, rgba(51, 75, 53, 1) 52%, rgba(51, 75, 53, 1) 70%, rgba(253, 229, 191, 1) 70%, rgba(253, 229, 191, 1) 92%, rgba(51, 75, 53, 1) 92%);}
+
+.notable-regular {
+  font-family: "Notable", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.climate-crisis-regular {
+  font-family: "Climate Crisis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "YEAR" 1979;
+}
+
+
+.danfo-regular {
+  font-family: "Danfo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "ELSH" 0;
+}
+
+.sekuya-regular {
+  font-family: "Sekuya", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.limelight-regular {
+  font-family: "Limelight", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+
+h1 {
+    font-size:10rem !important;
+    color: #F6EEE1 !important;
+     text-shadow: 0 5px 8px rgba(0,0,0,0.7);
+}
+
+h2 {
+    font-size: 8rem !important;
+    color: #FDAD16 !important;
+     text-shadow: 0 5px 8px rgba(0,0,0,0.7);
+    
+}
+
+
+
+.rectangle1 {
+    height: 40rem !important;
+}
+
+.rectangle2 {
+    width: 40rem !important;
+    height: 19rem !important;
+}
+
+.rectangle3 {
+    width: 60rem !important;
+    height: 19rem !important;
+}
+
+.rectangle4 {
+    height: 7rem !important;
+    width: 30rem !important;
+}
+
+.rectangle5 {
+    height: 14rem !important;
+    width: 30rem !important;
+}
+
+.position-relative img {
+  filter: grayscale(100%) brightness(7%);
+  transition: filter 0.6s ease, transform 0.3s ease;
+  transform: scale(95%);
+}
+
+/* Image révélée */
+.position-relative.revealed img {
+  filter: grayscale(0%) brightness(100%);
+  transform: scale(1);
+}
+
+/* Chiffre visible par défaut */
+.number {
+  font-size: 10rem;
+  color: #FA6036;
+  text-shadow: 0 5px 8px rgba(0,0,0,0.7);
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Chiffre disparaît quand révélé */
+.position-relative.revealed .number {
+  opacity: 0;
+}
+
+.couleur1 {
+  color: #fde5bf;
+}
+
+.couleur2 {
+  color: #FDAD16;
+}
+
+.couleur3 {
+  color: #48684b;
+}
+
+.taille10 {
+  font-size: 30rem;
+}
+
+.taille1 {
+  font-size: 10rem;
+}
+.taille2 {
+  font-size: 8rem;
+}
+.taille3 {
+  font-size: 5rem;
+}
+.taille4 {
+  font-size: 3rem;
+}
