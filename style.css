@@ -82,7 +82,7 @@ h2 {
 }
 
 .position-relative img {
-  filter: grayscale(100%) brightness(7%);
+  filter: grayscale(100%) brightness(13%);
   transition: filter 0.6s ease, transform 0.3s ease;
   transform: scale(95%);
 }
