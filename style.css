@@ -45,13 +45,13 @@ background: linear-gradient(180deg, rgba(51, 75, 53, 1) 22%, #070707 22%, #07070
 h1 {
     font-size:10rem !important;
     color: #F6EEE1 !important;
-     text-shadow: 0 5px 8px rgba(0,0,0,0.7);
+     text-shadow: 20px 10px 1px rgba(0,0,0,0.8);
 }
 
 h2 {
-    font-size: 8rem !important;
+    font-size: 10rem !important;
     color: #FDAD16 !important;
-     text-shadow: 0 5px 8px rgba(0,0,0,0.7);
+    text-shadow: 10px 5px 1px rgba(0,0,0,0.8);
     
 }
 
@@ -83,14 +83,17 @@ h2 {
 
 .position-relative img {
   filter: grayscale(100%) brightness(13%);
-  transition: filter 0.6s ease, transform 0.3s ease;
+  transition: filter 0.6s ease, transform 0.5s ease, box-shadow 0.5s ease;
   transform: scale(95%);
+  box-shadow: 4px 4px rgba(87, 86, 86, 1) !important;
 }
 
 /* Image révélée */
 .position-relative.revealed img {
   filter: grayscale(0%) brightness(100%);
-  transform: scale(1);
+  transform: scale(98%);
+  transform: translate(-20px, -15px);
+  box-shadow: 18px 16px rgba(0, 0, 0, 0.6) !important
 }
 
 /* Chiffre visible par défaut */
