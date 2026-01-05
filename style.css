@@ -1,6 +1,16 @@
 body {
 background: #334B35;
-background: linear-gradient(180deg, rgba(51, 75, 53, 1) 22%, #070707 22%, #070707 30%, rgba(250, 96, 54, 1) 30%, rgba(250, 96, 54, 1) 37%, rgba(253, 229, 191, 1) 37%, rgba(253, 229, 191, 1) 52%, rgba(18, 8, 8, 1) 52%, rgba(51, 75, 53, 1) 52%, rgba(51, 75, 53, 1) 70%, rgba(253, 229, 191, 1) 70%, rgba(253, 229, 191, 1) 92%, rgba(51, 75, 53, 1) 92%);}
+background: linear-gradient(180deg, rgba(51, 75, 53, 1) 22%, #070707 22%, #070707 30%, rgba(51, 75, 53, 1)30%, rgba(51, 75, 53, 1) 37%, rgba(253, 229, 191, 1) 37%, rgba(253, 229, 191, 1) 52%, rgba(18, 8, 8, 1) 52%, rgba(51, 75, 53, 1) 52%, rgba(51, 75, 53, 1) 70%, rgba(253, 229, 191, 1) 70%, rgba(253, 229, 191, 1) 92%, rgba(51, 75, 53, 1) 92%);
+min-width: 592px;
+}
+
+
+.miltonian-tattoo-regular {
+  font-family: "Miltonian Tattoo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 .notable-regular {
   font-family: "Notable", sans-serif;
@@ -19,22 +29,6 @@ background: linear-gradient(180deg, rgba(51, 75, 53, 1) 22%, #070707 22%, #07070
 }
 
 
-.danfo-regular {
-  font-family: "Danfo", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "ELSH" 0;
-}
-
-.sekuya-regular {
-  font-family: "Sekuya", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
 .limelight-regular {
   font-family: "Limelight", sans-serif !important;
   font-weight: 400 !important;
@@ -44,18 +38,22 @@ background: linear-gradient(180deg, rgba(51, 75, 53, 1) 22%, #070707 22%, #07070
 
 h1 {
     font-size:10rem !important;
-    color: #F6EEE1 !important;
+    color: rgba(253, 229, 191, 1) !important;
      text-shadow: 20px 10px 1px rgba(0,0,0,0.8);
+     transition: font-size 0.5s ease, color 0.6s ease, text-shadow 1s ease;
 }
 
 h2 {
     font-size: 10rem !important;
     color: #FDAD16 !important;
     text-shadow: 10px 5px 1px rgba(0,0,0,0.8);
+     transition: font-size 0.5s ease, color 0.6s ease, text-shadow 1s ease;
     
 }
 
-
+header {
+  transition: background-color 0.2s ease;
+}
 
 .rectangle1 {
     height: 40rem !important;
@@ -82,17 +80,18 @@ h2 {
 }
 
 .position-relative img {
-  filter: grayscale(100%) brightness(13%);
-  transition: filter 0.6s ease, transform 0.5s ease, box-shadow 0.5s ease;
+  filter: grayscale(100%) brightness(8%);
+  transition: filter 0.6s ease, transform 0.5s ease, box-shadow 0.5s ease !important;
   transform: scale(95%);
   box-shadow: 4px 4px rgba(87, 86, 86, 1) !important;
+  transition: scale 0.5s ease;
 }
 
 /* Image révélée */
 .position-relative.revealed img {
   filter: grayscale(0%) brightness(100%);
   transform: scale(98%);
-  transform: translate(-20px, -15px);
+  transform: translate(-10px, -6px);
   box-shadow: 18px 16px rgba(0, 0, 0, 0.6) !important
 }
 
@@ -103,7 +102,7 @@ h2 {
   text-shadow: 0 5px 8px rgba(0,0,0,0.7);
   pointer-events: none;
   opacity: 1;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.2s ease;
 }
 
 /* Chiffre disparaît quand révélé */
@@ -127,6 +126,10 @@ h2 {
   font-size: 30rem;
 }
 
+span {
+  transition: font-size 0.6 ease;
+}
+
 .taille1 {
   font-size: 10rem;
 }
@@ -139,3 +142,78 @@ h2 {
 .taille4 {
   font-size: 3rem;
 }
+
+.img1 {
+  margin-bottom: 1rem !important;
+} 
+
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+
+  .taille1 {
+    font-size: 8rem;
+  }
+  .taille2 {
+    font-size: 6rem;
+  }
+  .taille3 {
+    font-size: 4rem;
+  }
+  .taille0 {
+    font-size: 9rem !important;
+  }
+
+}
+
+@media screen and (max-width: 1400px) {
+  h2 {
+    font-size: 6rem;
+    
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 4rem !important;
+    padding: 3rem 0 0 0;
+    color: #334B35 !important;
+    text-shadow:0px 0px 1px rgba(0,0,0,0.8) !important;
+  }
+  h2 {
+    font-size: 3rem !important;
+    color: #334B35 !important;
+    text-shadow:0px 0px 1px rgba(0,0,0,0.8) !important;
+    display: flex !important;
+    justify-content: center !important;
+    /* background-color: rgb(0, 0, 0, 0.8) !important; */
+    border-radius: 1rem;
+    padding: 0;
+    max-width: 516px;
+  }
+   
+  .large-max {
+    max-width: 516px !important;
+  }
+  .large-max-2 {
+    max-width: 490px !important;
+  }
+  .position-relative.revealed img {
+    transform: translate(0px, 0px) !important;
+    box-shadow: 18px 16px rgba(0, 0, 0, 0.6) !important
+  }
+  
+  .Avent {
+    font-size: 5rem !important;
+  }
+  .img1 {
+    margin-bottom: 1rem;
+    max-width: 500px;
+  }
+  header {
+    background-color: rgba(253, 229, 191, 1) ;
+    transition: background-color 1s ease;
+  }
+}
+
+
