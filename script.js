@@ -22,8 +22,11 @@ document.querySelectorAll('.position-relative').forEach(day => {
         console.log(identif) 
         console.log(numnum)
         }
-        else { 
-          alert("Revenez demain !")
+        if (parseInt(event.currentTarget.id)>identif+1){ 
+          alert("Ce n'est pas le bon jour !")
+        }
+        if (parseInt(event.currentTarget.id)===identif+1) {
+          alert("Cette case s'ouvrira demain !")
         }
   });
 });
