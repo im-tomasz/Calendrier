@@ -22,5 +22,8 @@ document.querySelectorAll('.position-relative').forEach(day => {
         console.log(identif) 
         console.log(numnum)
         }
+        else { 
+          alert("Revenez demain !")
+        }
   });
 });
