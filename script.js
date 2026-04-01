@@ -12,9 +12,9 @@ let progression = 1
 * Cette fonction crée un événement de clic sur chaque case. 
 * Elle compare ensuite, lors du clic, l'index de progression et la date du jour, elle laisse apparaître l'image si la case peut être ouverte
 */
-const canItBeOpened = document.querySelectorAll('.position-relative').forEach(day => {
+const canItBeOpened = document.querySelectorAll('.position-relative').forEach(element => {
   
-  day.addEventListener('click', (event) => {
+  element.addEventListener('click', (event) => {
 
         // comparaison de la progression et de la date
         
@@ -26,10 +26,10 @@ const canItBeOpened = document.querySelectorAll('.position-relative').forEach(da
             alert("Ce n'est pas le bon jour !")
             break
           case (parseInt(event.currentTarget.id) <= jour && parseInt(event.currentTarget.id) === progression) :
-            day.classList.toggle('revealed');
+            element.classList.toggle('revealed');
             progression++
             if (progression===25) {
-                showPopup()
+              console.log("Joyeux Noël !")
             }
             break
         }
